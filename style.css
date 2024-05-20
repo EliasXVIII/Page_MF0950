@@ -1,0 +1,144 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+    
+nav{
+    background-color:  #eaf6b4 ;
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+nav > img{
+    height: 10rem;
+}
+
+ul{
+    width: 50%;
+    /* border: solid; */
+    list-style: none;
+    display: flex;
+}
+
+a{display: flex;
+    align-items: center;
+    background-color: #f6c0b4;
+    width: 5rem;
+    height: 2rem;
+    border-radius: 0.2rem;
+}
+
+/* ********Main**************** */
+
+main{
+    min-height: 40rem;
+    width: 80%;    
+}
+
+h1{
+    margin-top: 1rem;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+article > img{
+    height: 20rem;
+    margin-bottom: 1rem;
+}
+
+.art1{
+    width: 32rem;
+    padding: 2rem;
+    /* border: solid; */
+    
+}
+
+.art2{
+    width: 32rem;
+    padding: 2rem;
+    
+
+}
+
+.art3{
+    width: 32rem;
+    padding: 2rem;
+    
+}
+
+.art4{
+    width: 32rem;
+    padding: 2rem;
+    
+
+}
+/* *********FOOTER*************** */
+
+footer > p{
+    background-color: #c9f6b4;
+    height: 3rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.subFooter{background-color: #eaf6b4;
+    height: 10rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.footerCen{
+    width: 33%;
+    display: flex;
+    /* border: solid red; */
+}
+.footerCen > img{
+    height: 10rem;
+}
+
+.redSocial{
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* border: solid blue; */
+}
+
+.redSocial > i{
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 2rem;
+    width: 20%;
+   /*  border: solid ; */
+}
+
+.redSocial > a{
+    background-color: #eaf6b4 ;
+    text-decoration: none;
+    color: black;
+}
+.info{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+}
