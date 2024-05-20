@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,22 +22,52 @@
 </header>
 
 <main>
-<form action="/bd.html" method="get">
-    <label for="name">Nombre</label>
-    <input type="text" name="name" id="name">
+    <article class="art1">
+        <img src="/assets/domotica-en-casa-familia-feliz.jpg" alt="Hogar inteligente">
+        <div class="textoImg">
+            <h3>Siente la experiencia de un Hogar inteligente</h3>
+            <br>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, necessitatibus quis neque ab aliquam ullam illum pariatur molestias obcaecati repellendus placeat magnam repellat mollitia. Vel quaerat architecto omnis veritatis et.</p>
+        </div>
+    </article>
+<div class="formulario">
+                
+        <fieldset>
+    <legend> &nbsp;&nbsp; Envíanos tu idea! &nbsp;&nbsp; </legend>
+
+    <form class="login1" action="/db.html" method="get">
+    <label for="nombre">Nombre</label>
+    <input type="text" name="nombre" id="nombre" placeholder="ingrese su nombre" autofocus>
+    <label for="apellido">Apellido</label>
+    <input type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido">
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" placeholder="Ingrese su correo electrónico" required>
     <br>
-    <label for="lastname">Apellido</label>
-    <input type="text" name="lastname" id="lastname">
+    <p>¿Cómo quiere racoger su presupuesto?</p>
+    <div class="radio">
+    
+    <label for="electronica">Electrónica </label>
+    <input type="radio" name="factura" id="">
+    <label for="carta">Carta </label>
+    <input type="radio" name="factura" id="">
+    <label for="tienda">Tienda </label>
+    <input type="radio" name="factura" id="">
+    </div>
+
+    <label for="textarea">Cuentanos tus ideas</label>
     <br>
-    <label for="mail">Correo electrónico</label>
-    <input type="email" name="mail" id="mail">
-    <br>
-    <label for="textarea">Te escuchamos</label>
-    <textarea name="textarea" id="" placeholder="cuentanos tu idea"></textarea>
-    <br>
+    <textarea name="textarea" id="textarea" rows="12" cols="50" placeholder="ingrese un texto hasta 3000 caracteres"></textarea>
+
+    <label for="condiciones">Acepto términos y condiciones</label>
+    <input type="checkbox" name="condiciones" id="condiciones" ><br>
+
     <input type="submit" value="Enviar">
 
+
+    
 </form>
+</fieldset>
+</div>
 </main>
 
 <footer>
