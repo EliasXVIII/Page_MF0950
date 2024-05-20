@@ -282,4 +282,14 @@ footer > p{
     .info{
         display: none;
     }
+
+    .textoLogin{
+        width: 80%;
+    }
+
+    .imagenContacto{
+        width: 22rem;
+        height: auto;
+
+    }
 }
