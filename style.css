@@ -6,8 +6,32 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-    
-nav{
+header{
+    background-color:#eaf6b4 ;
+    display: flex;
+}
+.logo{
+    height: 10rem;
+    padding-left: 2rem;
+}
+.nav{
+    display: flex;
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    list-style-type: none;
+
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: #1c1c1c;
+}
+
+/* nav{
     background-color:  #eaf6b4 ;
     width: 100%;
     height: 10rem;
@@ -23,7 +47,7 @@ nav > img{
 
 ul{
     width: 50%;
-    /* border: solid; */
+   
     list-style: none;
     display: flex;
     
@@ -39,6 +63,11 @@ a{display: flex;
 
 a:hover{
     background-color: #b4f6c0;
+} */
+
+.cerrarMenu, .abrirMenu{
+    display: none;
+
 }
 
 /* ********Main**************** */
@@ -216,6 +245,12 @@ footer > p{
         width: 90%;
     }
     
+    #enviar:disabled{
+        background-color: grey;
+        color: white;
+        cursor: not-allowed;
+    }
+
    /*  ******LOGIN********* */
 
    main{
@@ -269,7 +304,7 @@ footer > p{
 
 /* ***********Mobil********** */
 
-@media screen and (max-width: 550px){
+@media screen and (max-width: 600px){
     .avisoSign{
         width: 80%;
     }
@@ -291,5 +326,57 @@ footer > p{
         width: 22rem;
         height: auto;
 
+    }
+    /* ************MENU HAMB************* */
+    
+    .abrirMenu{
+        display: block;
+        font-size: large;
+        margin-top: 4rem;
+        height: 2rem;
+        width: 2rem;
+        border: none;
+        background-color: #eaf6b4;
+    }
+
+    .cerrarMenu{
+        display: block;
+        color: white;
+        font-size:x-large;
+        height: 2rem;
+        width: 2rem;
+        border: none;
+        background-color: #1c1c1c;
+    }
+
+    .nav{
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: end;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #1c1c1c;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0,0,0,.5);
+        opacity: 1;
+    }
+
+    .nav.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-list{
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .nav-list li a{
+        color: beige;
     }
 }

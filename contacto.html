@@ -9,18 +9,22 @@
     
 </head>
 <body>
-<header>
-    <nav>
-        <img src="/assets/logo_sin_fondo.png" alt="Logo principal de la página">
-        <ul>
-            <a href="/index.html"><li>Inicio</li></a>
-            <a href="/contacto.html"><li>Contacto</li></a>
-            <a href="/login.html"><li>Login</li></a>
-            <a href="/signUp.html"><li>Regístrate</li></a>
-        </ul>
-    </nav>
-</header>
-
+    <header>
+    
+        <img class="logo" src="/assets/logo_sin_fondo.png" alt="Logo principal de la página">
+        <button class="abrirMenu" id="abrir"><i class="fa-solid fa-bars"></i></button>
+            <nav class="nav" id="nav">
+                
+                <button class="cerrarMenu" id="cerrar"><i class="fa-regular fa-circle-xmark"></i></button>
+                <ul class="nav-list" >
+                    <li><a href="/index.html">Inicio</a>
+                    <li><a href="/contacto.html">Contacto</a></li>
+                    <li><a href="/login.html">Login</a></li>
+                    <li><a href="/signUp.html">Regístrate</a></li>
+                    <li><a href="" id="logout">Logout</a></li>
+                </ul>
+            </nav>
+    </header>
 <main>
     <article class="art1">
         <img class="imagenContacto" src="/assets/domotica-en-casa-familia-feliz.jpg" alt="Hogar inteligente">
@@ -37,9 +41,9 @@
 
     <form class="login1" action="/db.html" method="get">
     <label for="nombre">Nombre</label>
-    <input type="text" name="nombre" id="nombre" placeholder="ingrese su nombre" autofocus>
+    <input type="text" name="nombre" id="nombre" placeholder="ingrese su nombre" autofocus required>
     <label for="apellido">Apellido</label>
-    <input type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido">
+    <input type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido" required>
     <label for="email">Email</label>
     <input type="email" name="email" id="email" placeholder="Ingrese su correo electrónico" required>
     <br>
@@ -47,22 +51,21 @@
     <div class="radio">
     
     <label for="electronica">Electrónica </label>
-    <input type="radio" name="factura" id="">
+    <input type="radio" name="factura">
     <label for="carta">Carta </label>
-    <input type="radio" name="factura" id="">
+    <input type="radio" name="factura">
     <label for="tienda">Tienda </label>
-    <input type="radio" name="factura" id="">
+    <input type="radio" name="factura">
     </div>
 
     <label for="textarea">Cuentanos tus ideas</label>
     <br>
     <textarea name="textarea" id="textarea" rows="12" cols="50" placeholder="ingrese un texto hasta 3000 caracteres"></textarea>
 
-    <label for="condiciones">Acepto términos y condiciones</label>
-    <input type="checkbox" name="condiciones" id="condiciones" ><br>
+    <label for="checkbox">Acepto términos y condiciones</label>
+    <input type="checkbox" name="condiciones" id="checkbox" required ><br>
 
-    <input type="submit" value="Enviar">
-
+    <input type="submit" value="Enviar" id="enviar" disabled>
 
     
 </form>
@@ -90,6 +93,8 @@
     </div>      
     <p>copyright © Elías Riquelme</p>
 </footer>
-
+<script src="/js/check.js"></script>
+<script src="/js/menuHam.js"></script>
+<script src="/js/logout.js"></script>
 </body>
 </html>
