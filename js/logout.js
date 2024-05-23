@@ -6,5 +6,6 @@ const logout = document.getElementById("logout")
 logout.addEventListener("click", ()=>{
     alert("Vuelve Pronto!")
     localStorage.removeItem("loginExitoso")
-    window.location.href = "login.html"
+    window.location.href = "login.html" 
+    
 })
