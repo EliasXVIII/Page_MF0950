@@ -12,8 +12,6 @@ signupForm.addEventListener("submit", (e)=>{
         alert("Usuario ya Registrado")
 
     Usuarios.push({name:name, email:email, password:password})
-    /* console.log(userRegistered) */
-    /* console.log(Users) */
     localStorage.setItem("users", JSON.stringify(Usuarios))
 
     alert("Registro Exitoso")
